@@ -50,8 +50,14 @@ nextButton.addEventListener('click', e => {
     const nextSlide = currentSlide.nextElementSibling;
     const currentDot = dotsNav.querySelector('.current-slide');
     const nextDot = currentDot.nextElementSibling;
+    
     moveToSlide(track, currentSlide, nextSlide);
     updateDots(currentDot, nextDot);
+
+    if(currentSlide === slides[slides.length -1]) {
+        moveToSlide(track, currentSlide, slides[0]);
+        updateDots(currentDot, dots[0]);
+    }
 
 })
 
