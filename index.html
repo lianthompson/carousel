@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Vanilla JS Carousel</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class="carousel">
+            <button class="carousel__button carousel__button--left">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAUVBMVEX///8AAABlZWVjY2NpaWlvb29gYGBra2tzc3OQkJB3d3d7e3uNjY2BgYGGhoZ+fn75+fm8vLyXl5ewsLCkpKQWFhZXV1eenp7x8fGrq6uWlpYBkwN4AAAC0klEQVR4nO2dWU4DQRBD05BAWAJkYb3/QUFCKJnEf/So1M9+JyjLKXuydS8WIYQQQggh/I/tZnm/f6meYj627Zf36kHmYtf+uK0eZR7u2pFd9TBz8NVOAe7i3URg+6yepztTB1tbVQ/UmzMHW7upnqgzFwLbunqkvlwKbPvqmboiBLKyVAk8VA/Vk0chEPVMoxy8rh6qJ8rBZfVQPVEOoqrQ0kH8Dl5VD9WTCBwdS4GokHmi14RyEFX0lg7idxCVohE4OpYC8SGDqomNEIgq+mdHB1E7qBxEpWgEjs4DXaByEBUyykFUTSgHUUWPd1AJxO8gKkUjcHTu6QLxIaMcxNcEqujxDiqB+B1EpWgEjs6aLhAfMspBfE2gih7voBKI30FUikbg6KzoAvEhoxzE1wSq6PEOKoHZwZGIwNG5pQvEP8koB1F/kMTXxJLuoHqJ4ncQlaIRODoqZFAC8SFjWROoor+iO6heovgdRKVoBI7ONV0gPmTwNYEv+p0QiHLwg76DiwM8RVWOwgQu3s4FvlZP1Bu+h/w95GepPF8N1Yf6qRT1TGPwXGrw3sLg/aHBe/xIZGAQNwalgf84w+C7J4PvDy0SFf89fiQyMI0bWGngf5to8PtSg98IWyQq/rf6kcjAIG6URFhp4P9BauuiwS7CEhV/JobFC9VUIqw0DHYRf8aQrYsGuwhLVPyZe5HIwCBu8GfQGpwjbOuiwS7CEhV/rn4kMjCIG/w9MwZ3Bdm6aLCLsETF350XiQzw95Aa3CVrcB+whYv4e7kN7laPRAYGEh894wZWGspFWPWbugjbRSXRIFEjcTRMJRrEDaw01KlFsOo3ddFgF2H/01AuvlcP1Rcl8aV6qL4IiZ/VM3XmUuKqeqTeXEiEleIPX2cK19UD9efMxX31PDMwdRGWpb+cunioHmYejodpw55pjmyZTzQTtk+rzR65gyGEEEIIYco3eyIa1YZQ+qIAAAAASUVORK5CYII=" alt="">
+            </button>
+            <div class="carousel__track-container">
+                <ul class="carousel__track">
+                    <li class="carousel__slide">
+                        <img src="https://drscdn.500px.org/photo/50740698/m%3D900/v2?webp=true&sig=f033a432a7b3801fdac8c68d8102e203f47c4f769f7f0797f236c9afbe9166d6" alt="">
+                    </li>
+                    <li class="carousel__slide">
+                        <img src="http://akc.org/wp-content/uploads/2015/10/Beagle-Puppies.jpg" alt="">
+                    </li>
+                    <li class="carousel__slide">
+                        <img src="https://drscdn.500px.org/photo/74336995/m%3D900/v2?webp=true&sig=2f18282cd3718264b621a9023647c3b879c9bfb205382df8ec142caa5409373c" alt="">
+                    </li>
+                    <li class="carousel__slide">                        
+                        <img src="https://drscdn.500px.org/photo/53902484/m%3D900/967900e2879633dccdb92271ab8113ed" alt="">
+                    </li>
+                    <li class="carousel__slide">                        
+                        <img src="https://drscdn.500px.org/photo/34714752/m%3D900/v2?webp=true&sig=b7d89372d57338974251112917c2cfd1ec3d1cd700afbe904e0131fb2e03ab1f" alt="">
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel__button carousel__button--right">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAUVBMVEX///8AAACTk5OWlpZlZWVmZmZgYGBqamoICAiBgYHx8fGlpaVXV1e9vb2YmJicnJzLy8sqKirU1NRubm6tra34+PiIiIgWFhYjIyPFxcV3d3ciBd2QAAACL0lEQVR4nO3bWW7CQBREUZsMzCEDZNr/QkOiRAzuTzutun3PCvqpmlc2gq6TJEkS3mr/OV9ua59iQrv+xwI747z/81D7KNN46E9mtQ8zhVV/7qb2cSawvpiQmOLd5YTAFDdXE/JSvM6Ql+J6MCEtxdVwQtqIs8KIsIs6L4wIS/G2MCLsAW64T3Ep3psiQOmzCNuojabYwIhe1DRWP4HVT+BGJbD6CRq9qJZGGqufwI1KYPUTNHpRLY00Vj+BG5XA6ido9KJaGmmsfgI3KoHVT9DoRbU00lj9BG5UAqufoNGLammksfoJ3KgEVj9BoxfV0khj9RO4UQmsfgL/109gigSNpuhGTdPoiF7UNJYGQSnFXe1DjauU4kftQ42r8Er8XvtMIyuk+Fz7TCMbjriufaSxvV1PCOt9fob4z2Fhlz7VPtOoSn34WPtQY8I/0+CfS/HvFvgE8e/4TSaIGhD/fWmTCVoTSUwwnUWfDj+gRZ/OmkiHTxD/q0T8FsX/6NIrmg6fIP5PCPgELfp0+C1q0afDX1F8ghZ9Oos+HX6LWvTp8FcUn6BFn86iT4ffohZ9OvwVxSdo0aez6NPht6hFnw5/RfEJWvTpLPp0+C1q0afDX1F8ghZ9Oos+HX6LWvTp8FcUn6BFnw5f9Pg/SO7oW/RAT7Bb0wcs7FHUFT3awBMcZkhLcPA5xCXYdSt4gkczdoLfTs80qEe1c79PNYtt7YNM57BfvryC55MkSdI/+QL56Rf6Grig+QAAAABJRU5ErkJggg==" alt="">
+            </button>
+
+            <div class="carousel__nav">
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+            </div>
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
